@@ -1,0 +1,578 @@
+@font-face {
+    font-family: '2P';
+    src: url('../../assets/PressStart2P-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poet';
+    src: url('../../assets/PoetsenOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Seymour';
+    src: url('../../assets/SeymourOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('../../assets/CrimsonText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lilita';
+    src: url('../../assets/LilitaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pega';
+    src: url('../../assets/SEGA.TTF') format('truetype');
+}
+
+* {
+    cursor: url(/recticle5.webp) 11.5 12, auto !important
+}
+
+.pega {
+    font-family: 'Pega';
+}
+
+a {
+    text-decoration: none
+}
+
+.chakra-container {
+    width: 100%;
+    max-width: 100%;
+    text-align: center
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    z-index: 10
+}
+
+.gif {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    z-index: 3
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+#bg {
+    min-height: 1200px;
+}
+
+#pepega-textmeme {
+    font-family: "2P", sans-serif;
+    font-size: clamp(3rem, 10vw, 9rem);
+    margin: 20px 0 0;
+    padding: 3.75rem 0rem 0rem;
+    color: #549b35;
+    line-height: clamp(4rem, 9rem, 17rem);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 0 0 white, 0 2px 0 white, -2px 0 0 white, 0 -2px 0 white, 2px 1px 0 white, 1px 2px 0 white, -1px -2px 0 white, -2px -1px 0 white
+}
+
+.ImgDisplay {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    margin-top: .75rem;
+    padding: rem 1rem 1rem;
+
+}
+
+.ImgDisplay img {
+    max-width: 20vw;
+}
+
+.podium {
+    overflow: hidden;
+    width: 100%;
+    gap: 3vw;
+    flex-wrap: wrap;
+    margin-top: .75rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.podium .place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#place2 {
+    padding-top: 200px;
+}
+
+.place .coin {
+    width: 10vw;
+    position: relative;
+}
+
+.place .coin::before {
+    content: '';
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 80%;
+}
+
+.place .placeimg {
+    max-width: 24vw;
+}
+
+.place .placep {
+    font-family: "2P", sans-serif;
+    font-size: clamp(1rem, 1vw, 9rem);
+    color: #0b1f02;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 0 0 white, 0 2px 0 white, -2px 0 0 white, 0 -2px 0 white, 2px 1px 0 white, 1px 2px 0 white, -1px -2px 0 white, -2px -1px 0 white;
+    padding: 1rem;
+}
+
+.myButton {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 16px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 36px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .place .placeimg {
+        max-width: 95vw;
+    }
+
+    .place .coin {
+        width: 30vw;
+    }
+
+    .ImgDisplay img {
+        max-width: 95vw;
+    }
+
+    #pepega-textmeme {
+        font-family: "2P", sans-serif;
+        font-size: clamp(2rem, 8vw, 9rem);
+        margin: 20px 0 0;
+        padding: 3.75rem 0rem 0rem;
+        color: #549b35;
+        line-height: clamp(4rem, 9rem, 17rem);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 0 0 white, 0 2px 0 white, -2px 0 0 white, 0 -2px 0 white, 2px 1px 0 white, 1px 2px 0 white, -1px -2px 0 white, -2px -1px 0 white;
+    }
+
+}
+
+@font-face {
+    font-family: '2P';
+    src: url('../../assets/PressStart2P-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poet';
+    src: url('../../assets/PoetsenOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Seymour';
+    src: url('../../assets/SeymourOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('../../assets/CrimsonText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lilita';
+    src: url('../../assets/LilitaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pega';
+    src: url('../../assets/SEGA.TTF') format('truetype');
+}
+
+* {
+    cursor: url(/recticle5.webp) 11.5 12, auto !important
+}
+
+.pega {
+    font-family: 'Pega';
+}
+
+a {
+    text-decoration: none
+}
+
+.chakra-container {
+    width: 100%;
+    max-width: 100%;
+    text-align: center
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    z-index: 10
+}
+
+.gif {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    z-index: 3
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+#bg {
+    min-height: 1200px;
+}
+
+#pepega-textmeme {
+    font-family: "2P", sans-serif;
+    font-size: clamp(3rem, 10vw, 9rem);
+    margin: 20px 0 0;
+    padding: 3.75rem 0rem 0rem;
+    color: #549b35;
+    line-height: clamp(4rem, 9rem, 17rem);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 0 0 white, 0 2px 0 white, -2px 0 0 white, 0 -2px 0 white, 2px 1px 0 white, 1px 2px 0 white, -1px -2px 0 white, -2px -1px 0 white
+}
+
+.ImgDisplay {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    margin-top: .75rem;
+    padding: rem 1rem 1rem;
+
+}
+
+.ImgDisplay img {
+    max-width: 20vw;
+}
+
+.podium {
+    overflow: hidden;
+    width: 100%;
+    gap: 3vw;
+    flex-wrap: wrap;
+    margin-top: .75rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.podium .place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#place2 {
+    padding-top: 200px;
+}
+
+.place .coin {
+    width: 10vw;
+    position: relative;
+}
+
+.place .coin::before {
+    content: '';
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 80%;
+}
+
+.place .placeimg {
+    max-width: 24vw;
+}
+
+.place .placep {
+    font-family: "2P", sans-serif;
+    font-size: clamp(1rem, 1vw, 9rem);
+    color: #0b1f02;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 0 0 white, 0 2px 0 white, -2px 0 0 white, 0 -2px 0 white, 2px 1px 0 white, 1px 2px 0 white, -1px -2px 0 white, -2px -1px 0 white;
+    padding: 1rem;
+}
+
+.myButton {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 16px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 36px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.Captcha {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#captcha {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+    width: 50%;
+    color: #2f6627;
+    padding: 100px;
+    background-color: #fdd835;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    font-family: "2P" !important;
+}
+
+#captcha #textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #0000001a;
+    max-width: 800px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#captcha #textarea input {
+    font-family: Courier New, Courier, monospace;
+    outline: none;
+    margin: 0 10px;
+    flex: 1;
+
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 1.25rem;
+}
+
+#captcha #div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#captcha #div img {
+    width: 35vw;
+}
+
+#captcha #textarea button {
+    padding: 10px;
+    font-family: "2P";
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: .85rem;
+    text-align: center
+}
+
+.pointvote {
+    font-family: "2P", sans-serif;
+    font-size: clamp(1rem, 1vw, 9rem);
+    color: #0b1f02;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 0 0 white, 0 2px 0 white, -2px 0 0 white, 0 -2px 0 white, 2px 1px 0 white, 1px 2px 0 white, -1px -2px 0 white, -2px -1px 0 white;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    #captcha #textarea button {
+        padding: 10px;
+        font-family: "2P";
+        border: none;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    #captcha #textarea input {
+        font-family: Courier New, Courier, monospace;
+        outline: none;
+        margin: 0 10px;
+        flex: 1;
+        color: black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 10px;
+        border: 2px solid white;
+        font-size: 3vw;
+        width: 20vw;
+    }
+
+    #captcha #textarea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 5px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px #0000001a;
+        max-width: 805px;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.pointvote {}
+
+@media screen and (max-width: 800px) {
+    #captcha #textarea input {
+        font-size: 5vw;
+    }
+
+    .place .placeimg {
+        max-width: 95vw;
+    }
+
+    .place .coin {
+        width: 30vw;
+    }
+
+    .ImgDisplay img {
+        max-width: 95vw;
+    }
+
+    #pepega-textmeme {
+        font-family: "2P", sans-serif;
+        font-size: clamp(2rem, 8vw, 9rem);
+        margin: 20px 0 0;
+        padding: 3.75rem 0rem 0rem;
+        color: #549b35;
+        line-height: clamp(4rem, 9rem, 17rem);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 0 0 white, 0 2px 0 white, -2px 0 0 white, 0 -2px 0 white, 2px 1px 0 white, 1px 2px 0 white, -1px -2px 0 white, -2px -1px 0 white;
+    }
+
+}

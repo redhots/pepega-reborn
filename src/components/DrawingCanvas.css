@@ -1,0 +1,10 @@
+.overlay-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: auto; /* Allows the canvas to capture click events */
+    z-index: 1; /* Ensure it stays on top */
+  }
+  
