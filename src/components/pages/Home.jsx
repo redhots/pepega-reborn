@@ -678,7 +678,7 @@ function App() {
       <DotClickEffect dots={dots} zoomEffects={zoomEffects} />
 
       <div className="hero">
-        {Array(count)
+        {Array(count*8)
           .fill()
           .map((_, index) => (
             <BouncingImages key={index} />
@@ -895,9 +895,10 @@ function App() {
               </InViewComponent>
             </div>
           </div>
-          <img id="pepeyou" src="/Pepega_Youtube.svg" alt="" />
+          
         </div>
       </div>
+   {/*
       <div className="heroChess">
         <InViewComponent delay={0.2}>
           <a
@@ -991,6 +992,7 @@ function App() {
 
         </div>
       </div>
+      */}
       <div className="hero4">
         <InViewComponent delay={0.2}>
           <h2 className="pepega-text4">TARGET PRACTICE</h2>
@@ -1250,7 +1252,7 @@ function App() {
             PEGA
           </h2>
         </InViewComponent>
-        <img id="pepeuni" src="/pepega_uniswap.svg" alt="" />
+    
         <InViewComponent delay={0.4}>
           <div className="buy-button-section2">
             <Button className="buy-button2" colorScheme="red">
@@ -1325,52 +1327,10 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="image-buttons">
-              <a
-                className="no-dot"
-                target="_blank"
-                href="https://www.cls.global"
-              >
-                <img
-                  src="/CLS.webp"
-                  alt="CLS"
-                  id="CLS"
-                  className="image-button2 no-dot"
-                />
-              </a>
-            </div>
+   
           </div>
         </InViewComponent>
         <Hero6Gifs />
-        <div id="getemail">
-          <div className="email">
-            <h2>Subscribe to NewsLetter</h2>
-            <div>
-              <input
-                className="no-dot"
-                value={email}
-                onChange={emailchange}
-                type="email"
-                placeholder="Email"
-                name=""
-                id=""
-              />
-            </div>
-            <div>
-              {" "}
-              <button
-                className="no-dot"
-                onMouseEnter={isInMemeGenTrue}
-                onMouseLeave={isInMemeGenFalse}
-                onClick={sendEmail}
-              >
-                Subscribe
-              </button>
-            </div>
-              
-          </div>
-          <Modal isOpen={modalopen} string={message} />
-        </div>
       </div>
     </DynamicHeight>
   );

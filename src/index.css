@@ -539,7 +539,7 @@ body {
 
 .pepega-text {
   font-family: "2P", sans-serif;
-  font-size: clamp(3rem, 10vw, 9rem);
+  font-size: clamp(3rem, 6vw, 9rem);
   margin: 20px 0 0;
   color: #549b35;
   z-index: 2;
