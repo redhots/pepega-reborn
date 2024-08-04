@@ -730,7 +730,7 @@ function App() {
                 <a
                   className="no-dot"
                   target="_blank"
-                  href="https://t.me/PepegaCTO"
+                  href="https://t.me/PepegasCoin"
                 >
                   <img
                     src="/bt-tg-svg.svg"
@@ -1272,7 +1272,7 @@ function App() {
               <a
                 className="no-dot"
                 target="_blank"
-                href="https://t.me/PepegaCTO"
+                href="https://t.me/PepegasCoin"
               >
                 <img
                   src="/g-tg-svg.svg"
