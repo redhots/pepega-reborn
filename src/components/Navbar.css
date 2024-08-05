@@ -50,6 +50,7 @@ body {
 }
 
 .navbar {
+ 
   height: 60px;
   background-color: #fdd835;
   position: fixed;
@@ -115,6 +116,7 @@ body {
 }
 
 @media (max-width: 900px) {
+  
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -133,6 +135,7 @@ body {
 
   .nav-elements.active {
     width: 270px;
+    padding-left:1rem;
   }
 
   .nav-elements ul {
