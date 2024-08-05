@@ -66,6 +66,11 @@ const DotClickEffect = ({ dots, zoomEffects }) => {
             width: "150px",
             height: "150px",
             zIndex: 4,
+            userSelect: 'none',
+            pointerEvents: 'none',
+            WebkitUserSelect: 'none',
+            MozUserSelect: 'none',
+            msUserSelect: 'none'
           }}
         />
       ))}
@@ -1031,7 +1036,7 @@ function App() {
             </div>
           </InViewComponent>
         </div>
-
+{/*
         <div className="scoreboard">
           <div className="sp">
             <div className="Board">
@@ -1054,6 +1059,7 @@ function App() {
             </div>
           </div>
         </div>
+        */}
       </div>
       <div
         className="hero5"

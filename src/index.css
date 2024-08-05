@@ -169,7 +169,8 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background-color: #fdd835;
-  box-sizing: border-box
+  box-sizing: border-box;
+  padding-bottom:2rem;
 }
 
 .gun-left {
@@ -691,6 +692,7 @@ body {
   z-index: 2;
   top: 10%;
   left: 58%
+
 }
 
 .click-me img {
